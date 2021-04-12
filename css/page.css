@@ -1,0 +1,130 @@
+
+  .snip1226 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .snip1226 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+  }
+  .snip1226 a {
+    padding: 0.3em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .snip1226 a:before,
+  .snip1226 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e67e22;
+  }
+  .snip1226 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: black;
+    white-space: nowrap;
+  }
+  .snip1226 li:hover a,
+  .snip1226 .current a {
+    transform: translateY(100%);
+  }
+
+  .footercss {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 10pt;
+    color:white;
+  }
+
+  blockquote {
+    margin: 0 auto;
+    padding: 1em;
+    border-left: 5px solid #999;
+  }
+  blockquote:before {
+    display: none;
+  }
+  blockquote:not(:first-of-type) {
+    margin-top: .5em;
+  }
+  blockquote p {
+    color: rgb(255, 255, 255);
+    font-size: 16pt;
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+  }
+  blockquote footer {
+    margin-top: .5em;
+    padding: 0;
+    color: white;
+    font-size: 12pt;
+    text-align: left;
+    font-style: italic;
+  }
+  blockquote footer:before {
+    content: '— ';
+  }
+  blockquote:nth-of-type(even) {
+    text-align: right;
+    border-left: none;
+    border-right: 5px solid #999;
+  }
+  blockquote:nth-of-type(even) footer {
+    text-align: right;
+  }
+  blockquote:nth-of-type(even) footer:before {
+    content: '';
+  }
+  blockquote:nth-of-type(even) footer:after {
+    content: ' —';
+  }
+  @element 'blockquote' and (min-width: 300px) {
+    blockquote {
+      padding: 1em 20% 1em 1em;
+    }
+    blockquote p {
+      font-size: 14pt;
+    }
+    blockquote:nth-of-type(even) {
+      padding: 1em 1em 1em 20%;
+    }
+  }
+
+  .titles {
+    color:white;
+  }
+
+  .pagecontent {
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .pagecontent a {
+    color:white;
+  }
